@@ -1,0 +1,66 @@
+@font-face {
+    font-family: jakarta;
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body{margin: 0px; font-family: "jakarta"; background-color: var(--veryLightGrayBlue); display: flex; align-items: center; justify-content: center;}
+
+:root {
+    /*primary*/
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);/*amount, hover:marr, desc*/
+
+    /*neutral*/
+    --white: hsl(0, 0%, 100%);
+    --veryLightGrayBlue: hsl(210, 60%, 98%);/*body*/
+    --lightGrayBlue1: hsl(211, 68%, 94%);/*ntf*/
+    --lightGrayBlue2: hsl(205, 33%, 90%);/*border*/
+    --grayBlue: hsl(219, 14%, 63%);/*time*/
+    --darkGrayBlue: hsl(219, 12%, 42%);/*maar, action*/
+    --veryDarkBlue: hsl(224, 21%, 14%);/*notifications, name*/
+}
+
+@media only screen and (max-width: 629px) {
+  section{background-color: var(--white); width: 100%; padding: 32px; padding-top: 13px; padding-bottom: 8px; margin: 0px;}
+  header{display: flex; align-items: center;}
+  .title-amount{display: flex; align-items: center; font-size: 20px; font-weight: 800; gap: 8px;}
+  .title{color: var(--veryDarkBlue);}
+  .ntf_amount{background-color: var(--blue); color: var(--white); padding: 2px 10px; border-radius: 8px;}/**/
+  .maar{transition: all ease-in-out 200ms; cursor: pointer; color: var(--darkGrayBlue); margin-left: auto; font-size: 16px;} .maar:hover{color: var(--blue);}
+  .ntfs_wrap{display: flex; flex-direction: column; gap: 5px;}
+  .ntf{display: flex; gap: 16px; height: auto; font-size: 16px; padding: 16px; border-radius: 16px;}
+  .ntf_profile{width: 50px; height: 50px;}
+  .ntf_header{display: flex; flex-direction: column; gap: 4px;}
+  .ntf_header_info{display: inline;} .ntf_header_info span{margin-right: 5px;} .ntf_header_info:last-child{background-color: blue;}
+  .ntf_name{transition: all ease-in-out 200ms; cursor: pointer; color:var(--veryDarkBlue); font-weight: 800;} .ntf_name:hover{color: var(--blue);}
+  .ntf_action{color: var(--darkGrayBlue); font-weight: 500;}
+  .ntf_desc{transition: all ease-in-out 200ms; cursor: pointer; color: var(--darkGrayBlue); font-weight: 800;} .ntf_desc:hover{color: var(--blue);}
+  .status{height: 10px; width: 10px; background-color: var(--red); border-radius: 50%; display: inline-block;}
+  .ntf_time{color: var(--grayBlue); font-weight: 800;}
+  .pm_ntf{display: flex; flex-direction: column; gap: 16px; font-size: 16px; padding: 16px; border-radius: 16px;}
+  .pm_ntf_head{display: flex; gap: 16px;}
+  .ntf_message{transition: all ease-in-out 200ms; cursor: pointer; color: var(--darkGrayBlue); margin-left: 66px; padding: 16px; border: 1px solid var(--lightGrayBlue2); border-radius: 8px;} .ntf_message:hover{background-color: var(--lightGrayBlue2);}
+  .pic{transition: all ease-in-out 200ms; cursor: pointer; border: 3px solid white; width: 50px; height: 50px; margin-left: auto;} .pic:hover{border: 3px solid var(--lightGrayBlue2); border-radius: 12px;}
+}
+@media only screen and (min-width: 630px) {
+  section{background-color: var(--white); width: 705px; padding: 64px; padding-top: 26px; padding-bottom: 16px;  border-radius: 16px; margin: 64px;}
+  header{display: flex; align-items: center;}
+  .title-amount{display: flex; align-items: center; font-size: 24px; font-weight: 800; gap: 16px;}
+  .title{color: var(--veryDarkBlue);}
+  .ntf_amount{background-color: var(--blue); color: var(--white); padding: 4px 20px; border-radius: 8px;}
+  .maar{transition: all ease-in-out 200ms; cursor: pointer; color: var(--darkGrayBlue); margin-left: auto; font-size: 20px;} .maar:hover{color: var(--blue);}
+  .ntfs_wrap{display: flex; flex-direction: column; gap: 10px;}
+  .ntf{display: flex; gap: 32px; height: auto; font-size: 16px; padding: 32px; border-radius: 16px;}
+  .ntf_profile{width: 50px; height: 50px;}
+  .ntf_header{display: flex; flex-direction: column; gap: 8px;}
+  .ntf_header_info{display: inline;} .ntf_header_info span{margin-right: 5px;} .ntf_header_info:last-child{background-color: blue;}
+  .ntf_name{transition: all ease-in-out 200ms; cursor: pointer; color:var(--veryDarkBlue); font-weight: 800;} .ntf_name:hover{color: var(--blue);}
+  .ntf_action{color: var(--darkGrayBlue); font-weight: 500;}
+  .ntf_desc{transition: all ease-in-out 200ms; cursor: pointer; color: var(--darkGrayBlue); font-weight: 800;} .ntf_desc:hover{color: var(--blue);}
+  .status{height: 10px; width: 10px; background-color: var(--red); border-radius: 50%; display: inline-block;}
+  .ntf_time{color: var(--grayBlue); font-weight: 800;}
+  .pm_ntf{display: flex; flex-direction: column; gap: 32px; font-size: 16px; padding: 32px; border-radius: 16px;}
+  .pm_ntf_head{display: flex; gap: 32px;}
+  .ntf_message{transition: all ease-in-out 200ms; cursor: pointer; color: var(--darkGrayBlue); margin-left: 82px; padding: 16px; border: 1px solid var(--lightGrayBlue2); border-radius: 8px;} .ntf_message:hover{background-color: var(--lightGrayBlue2);}
+  .pic{transition: all ease-in-out 200ms; cursor: pointer; border: 3px solid white; width: 50px; height: 50px; margin-left: auto;} .pic:hover{border: 3px solid var(--lightGrayBlue2); border-radius: 12px;}
+}

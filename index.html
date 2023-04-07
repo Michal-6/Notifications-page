@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/images/favicon-32x32.png">
+  <script src="./main.js" defer></script>
+  
+  <title>Notifications page</title>
+</head>
+<body onload="setStyle()">
+  <section>
+    <header>
+      <span class="title-amount">
+        <p class="title">Notifications</p>
+        <p id="unreadCount" class="ntf_amount">0</p>
+      </span>
+      <span class="maar" onclick="markAsRead()">Mark all as read</span>
+    </header>
+    <div class="ntfs_wrap">
+      <div id="unseen" class="ntf">
+        <img class="ntf_profile" src="./assets/images/avatar-mark-webber.webp" alt="mark webber">
+        <div class="ntf_header">
+          <div class="ntf_header_info">
+            <span class="ntf_name">Mark Webber</span>
+            <span class="ntf_action">reacted to your recent post</span>
+            <span class="ntf_desc">My first tournament today!</span>
+            <div class="status"></div>
+          </div>
+          <span class="ntf_time">1m ago</span>
+        </div>
+      </div>
+      <div id="unseen" class="ntf">
+        <img class="ntf_profile" src="./assets/images/avatar-angela-gray.webp" alt="angela gray">
+        <div class="ntf_header">
+          <div class="ntf_header_info">
+            <span class="ntf_name">Angela Gray</span>
+            <span class="ntf_action">followed you</span>
+            <div class="status"></div>
+          </div>
+          <span class="ntf_time">5m ago</span>
+        </div>
+      </div>
+      <div id="unseen" class="ntf">
+        <img class="ntf_profile" src="./assets/images/avatar-jacob-thompson.webp" alt="jacob thompson">
+        <div class="ntf_header">
+          <div class="ntf_header_info">
+            <span class="ntf_name">Jacob Thompson</span>
+            <span class="ntf_action">has joined your group</span>
+            <span class="ntf_desc">Chess Club</span>
+            <div class="status"></div>
+          </div>
+          <span class="ntf_time">1 day ago</span>
+        </div>
+      </div>
+      <div id="seen" class="pm_ntf">
+        <div class="pm_ntf_head">
+          <img class="ntf_profile" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="rizky hasanuddin">
+          <div class="ntf_header">
+            <div class="ntf_header_info">
+              <span class="ntf_name">Rizky Hasanuddin</span>
+              <span class="ntf_action">sent you a private message</span>
+              <div class="status"></div>
+            </div>
+            <span class="ntf_time">5 days ago</span>
+          </div>
+        </div>
+        <div class="ntf_message">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.
+        </div>
+      </div>
+      <div id="seen" class="ntf">
+        <img class="ntf_profile" src="./assets/images/avatar-kimberly-smith.webp" alt="kimberly smith">
+        <div class="ntf_header">
+          <div class="ntf_header_info">
+            <span class="ntf_name">Kimberly Smith</span>
+            <span class="ntf_action">commented on your picture</span>
+            <div class="status"></div>
+          </div>
+          <span class="ntf_time">1 week ago</span>
+        </div>
+        <img class="pic" src="./assets/images/image-chess.webp" alt="chess pic">
+      </div>
+      <div id="seen" class="ntf">
+        <img class="ntf_profile" src="./assets/images/avatar-nathan-peterson.webp" alt="nathan peterson">
+        <div class="ntf_header">
+          <div class="ntf_header_info">
+            <span class="ntf_name">Nathan Peterson</span>
+            <span class="ntf_action">reacted to your recent post</span>
+            <span class="ntf_desc">5 end-game strategies to increase your win rate</span>
+            <div class="status"></div>
+          </div>
+          <span class="ntf_time">2 weeks ago</span>
+        </div>
+      </div>
+      <div id="seen" class="ntf">
+        <img class="ntf_profile" src="./assets/images/avatar-anna-kim.webp" alt="anna kim">
+        <div class="ntf_header">
+          <div class="ntf_header_info">
+            <span class="ntf_name">Anna Kim</span>
+            <span class="ntf_action">left the group</span>
+            <span class="ntf_desc">Chess Club</span>
+            <div class="status"></div>
+          </div>
+          <span class="ntf_time">2 weeks ago</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
